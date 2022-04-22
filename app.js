@@ -23,21 +23,13 @@ let addOver21 = false;
 
 function addParameter(x){
     let param = x[0];
-return 
-
-if (param.typeof() === addPerson.typeof()){
-    person.push(addPerson);
-    console.log(person);
-
-} else if (param.typeof() === addAge.typeof()){
-    age.push(addAge);
-    console.log(age);
+if (typeof(param) == typeof(addPerson)){
+    return     person.push(addPerson);
+} else if (typeof(param) == typeof(addAge)){
+    return age.push(addAge);
 } else {
-    over21.push(addOver21);
-    console.log(over21);
+    return over21.push(addOver21);
 }
-;
-
-
 }
-console.log(addParameter(person));
+addParameter(person);
+console.log(person);
